@@ -1,0 +1,67 @@
+@model flightListViewModel
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="h3">Admin flights</h1>
+        <hr>
+        <a class="btn btn-primary btn-sm" href="/admin/flights/create">Add flight</a>
+        <table class="table table-bbooked mt-3">
+            <thead>
+                <tr>
+                    <td style="width: 30px;">Id</td>
+                    <td style="width: 100px;">Image</td>
+                    <td>Name</td>
+                    <td style="width: 20px;">Price</td>
+                    <td style="width: 20px;">Anasayfa</td>
+                    <td style="width: 20px;">Onaylı</td>
+                    <td style="width: 150px;"></td>
+                </tr>
+            </thead>
+            <tbody>
+                @if(Model.Flights.Count>0)
+                {
+                       @foreach (var item in Model.Flights)
+                        {
+                            <tr>
+                                <td>@item.FlightId</td>
+                                <td><img src="~/img/@item.ImageUrl" width="80"></td>
+                                <td>@item.Source</td>
+                                <td>@item.Destination</td>
+                                <td>@item.Price</td>
+                                <td>
+                                    @if(item.IsHome)
+                                    {
+                                        <i class="fas fa-check-circle"></i>
+                                    }else{
+                                        <i class="fas fa-times-circle"></i>
+                                    }
+                                </td>
+                                <td>
+                                    @if(item.IsApproved)
+                                    {
+                                        <i class="fas fa-check-circle"></i>
+                                    }else{
+                                        <i class="fas fa-times-circle"></i>
+                                    }
+                                </td>
+                                <td>
+                                    <a href="/admin/flights/@item.FlightId" class="btn btn-primary btn-sm mr-2">Edit</a>
+                                    
+                                    <form action="/admin/deleteflight" method="POST" style="display: inline;">
+                                        <input type="hidden" name="flightId" value="@item.FlightId">
+                                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                    </form>
+                                </td>
+                        </tr>
+                        }
+                }else{
+                    <div class="alert alert-warning">
+                        <h3>No flights</h3>
+                    </div>
+                }
+
+             
+            </tbody>
+        </table>
+    </div>
+</div>

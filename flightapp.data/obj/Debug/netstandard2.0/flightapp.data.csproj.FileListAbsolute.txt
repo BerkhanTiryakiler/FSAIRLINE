@@ -1,0 +1,13 @@
+C:\Users\berkh\Pictures\flightapp\flightapp.data\bin\Debug\netstandard2.0\flightapp.data.deps.json
+C:\Users\berkh\Pictures\flightapp\flightapp.data\bin\Debug\netstandard2.0\flightapp.data.dll
+C:\Users\berkh\Pictures\flightapp\flightapp.data\bin\Debug\netstandard2.0\flightapp.data.pdb
+C:\Users\berkh\Pictures\flightapp\flightapp.data\bin\Debug\netstandard2.0\flightapp.entity.dll
+C:\Users\berkh\Pictures\flightapp\flightapp.data\bin\Debug\netstandard2.0\flightapp.entity.pdb
+C:\Users\berkh\Pictures\flightapp\flightapp.data\obj\Debug\netstandard2.0\flightapp.data.AssemblyInfoInputs.cache
+C:\Users\berkh\Pictures\flightapp\flightapp.data\obj\Debug\netstandard2.0\flightapp.data.AssemblyInfo.cs
+C:\Users\berkh\Pictures\flightapp\flightapp.data\obj\Debug\netstandard2.0\flightapp.data.csproj.CoreCompileInputs.cache
+C:\Users\berkh\Pictures\flightapp\flightapp.data\obj\Debug\netstandard2.0\flightapp.data.csproj.CopyComplete
+C:\Users\berkh\Pictures\flightapp\flightapp.data\obj\Debug\netstandard2.0\flightapp.data.dll
+C:\Users\berkh\Pictures\flightapp\flightapp.data\obj\Debug\netstandard2.0\flightapp.data.pdb
+C:\Users\berkh\Pictures\FlightApp\flightapp.data\obj\Debug\netstandard2.0\flightapp.data.csproj.AssemblyReference.cache
+C:\Users\berkh\Pictures\FlightApp\flightapp.data\obj\Debug\netstandard2.0\flightapp.data.GeneratedMSBuildEditorConfig.editorconfig

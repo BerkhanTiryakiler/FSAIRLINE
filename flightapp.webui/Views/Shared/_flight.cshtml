@@ -1,0 +1,24 @@
+@model Flight
+
+<div class="card mb-2">
+    <img class="card-img-top" src="https://cdn.mos.cms.futurecdn.net/mqRUPPghetpzNQpcRwKJ4j-1200-80.jpg" alt="">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Source</h5>
+        <h5 class="card-title">@Model.Destination</h5>
+        <small class="text-muted">
+            <i class="fas fa-lira-sign"></i>@Model.Price
+        </small>
+    </div>
+    <div class="card-footer text-center">
+        <a asp-controller="booking" asp-action="Details" asp-route-url="@Model.Url" class="btn btn-primary btn-sm">Details</a>
+
+        @if(User.Identity.IsAuthenticated)
+        {
+            <form asp-controller="Cart" asp-action="AddToCart" method="POST" style="display: inline;">
+                <input type="hidden" name="flightId" value="@Model.FlightId">
+                <input type="hidden" name="seatnumber" value="1">
+                <button type="submit" class="btn btn-primary btn-sm">Book</button>
+            </form>
+        }
+    </div>
+</div>   

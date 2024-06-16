@@ -1,0 +1,48 @@
+@model Flight
+
+<form method="POST">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label for="Source">Source</label>
+        <input asp-for="Source" value="@Model.Source" class="form-control">
+        <span asp-validation-for="Source" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Destinaion">Destination</label>
+        <input asp-for="Destination" value="@Model.Destination" class="form-control">
+        <span asp-validation-for="Destination" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Boarding">Boarding</label>
+        <input asp-for="Boarding" value="@Model.Boarding" class="form-control">
+        <span asp-validation-for="Boarding" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="ETA">ETA</label>
+        <input asp-for="ETA" value="@Model.ETA" class="form-control">
+        <span asp-validation-for="ETA" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Airline">Airline</label>
+        <input asp-for="Airline" value="@Model.Airline" class="form-control">
+        <span asp-validation-for="Airline" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Price">Price</label>
+        <input asp-for="Price" value="@Model.Price" class="form-control">
+         <span asp-validation-for="Price" class="text-danger"></span>  
+    </div>
+    <div class="form-group">
+        <label for="ImageUrl">ImageUrl</label>
+        <input asp-for="ImageUrl" value="@Model.ImageUrl" class="form-control">
+         <span asp-validation-for="ImageUrl" class="text-danger"></span>  
+    </div>
+    @* <div class="form-group">
+        <label for="CategoryId">CategoryId</label>
+        <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-control">
+            <option selected disabled>Seçiniz</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>  
+    </div> *@
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

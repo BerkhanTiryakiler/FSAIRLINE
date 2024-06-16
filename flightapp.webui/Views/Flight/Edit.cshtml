@@ -1,0 +1,34 @@
+@model Flight
+
+<form method="POST">
+    <input type="hidden" name="FlightId" value="@Model.FlightId"/>
+    <div class="form-group">
+        <label for="Source">Source</label>
+        <input asp-for="Source" value="@Model.Source" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="Destination">Destination</label>
+        <textarea asp-for="Destination" value="@Model.Destination" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="Boarding">Boarding</label>
+        <textarea asp-for="Boarding" value="@Model.Boarding" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="ETA">ETA</label>
+        <textarea asp-for="ETA" value="@Model.ETA" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="Airline">Airline</label>
+        <textarea asp-for="Airline" value="@Model.Airline" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="Price">Price</label>
+        <input asp-for="Price" value="@Model.Price" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="ImageUrl">ImageUrl</label>
+        <input asp-for="ImageUrl" value="@Model.ImageUrl" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

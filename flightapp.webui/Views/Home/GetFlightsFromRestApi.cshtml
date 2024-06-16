@@ -1,0 +1,12 @@
+@model List<Flight>
+
+@foreach (var item in Model)
+{
+    <div>
+        <p>@item.Source</p>
+        <p>@item.Destination</p>
+        <p>@item.Boarding</p>
+        <p>@item.ETA</p>
+        <p>@item.Price</p>
+    </div>
+}

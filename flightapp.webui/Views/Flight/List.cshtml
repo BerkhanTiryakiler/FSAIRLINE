@@ -1,0 +1,28 @@
+@model flightListViewModel
+
+
+@{
+    var popularClass = Model.Flights.Count>2? "popular":"";
+    var flights = Model.Flights;
+}
+
+@section Categories
+{
+    @await Component.InvokeAsync("Categories")
+}
+
+@if(flights.Count == 0)
+{
+    @await Html.PartialAsync("_noFlight")
+}
+else
+{
+    <div class="row">                  
+        @foreach (var flight in flights)
+        {    
+            <div class="col-md-4">
+                @await Html.PartialAsync("_Flight", flight)   
+        </div>       
+        }   
+    </div>
+}

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\flightapp.entity\flightapp.entity.csproj" />
+    <ProjectReference Include="..\flightapp.data\flightapp.data.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
